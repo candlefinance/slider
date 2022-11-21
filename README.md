@@ -11,8 +11,6 @@ A little (horizontal) animated slider component for React Native. Inspired by [r
 ## Caveats
 * This implementation of the pan gesture animation runs on the JS thread.
 
-<br>
-
 ## Installation
 
 ```sh
