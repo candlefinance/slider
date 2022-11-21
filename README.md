@@ -5,8 +5,8 @@ A little (horizontal) animated slider component for React Native. Inspired by [r
 <img center width="400px" src="https://user-images.githubusercontent.com/12258850/202975094-f3547c27-7b1c-42e8-8edc-6efc71766f21.gif" />
 
 ## Features
-* Vanilla React Native
-* Compatible with expo
+* Vanilla React Native animation API
+* Compatible with Expo, try it out in the [snack](https://snack.expo.dev/@candlefinance/candle-slider-demo)
 
 ## Caveats
 * This implementation of the pan gesture animation runs on the JS thread.
@@ -41,8 +41,8 @@ import Slider from '@candlefinance/slider';
   step={1}
   maximumTrackTintColor="#c7c7c7"
   minimumTrackTintColor="#ff0067"
-  ballIndicatorColor={'#4f4f4f'}
-  ballIndicatorTextColor={'#ffffff'}
+  ballIndicatorColor="#4f4f4f"
+  ballIndicatorTextColor="#ffffff"
 />
 ```
 
