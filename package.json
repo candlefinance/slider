@@ -1,6 +1,6 @@
 {
   "name": "@candlefinance/slider",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A little (horizontal) animated slider component for React Native.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
