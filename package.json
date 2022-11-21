@@ -1,5 +1,5 @@
 {
-  "name": "react-native-slider",
+  "name": "@candlefinance/slider",
   "version": "0.1.0",
   "description": "test",
   "main": "lib/commonjs/index",

@@ -1,18 +1,32 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-slider';
+import { StyleSheet, View } from 'react-native';
+import Slider from 'react-native-slider';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
+  const [myValue, setMyValue] = React.useState<number>(50);
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Slider
+        value={myValue}
+        disabled={false}
+        min={1}
+        max={99}
+        onChange={(value) => {
+          console.log('CHANGE', value);
+          setMyValue(value);
+        }}
+        onComplete={(value) => {
+          console.log('COMPLETE', value);
+        }}
+        width={300}
+        height={54}
+        step={1}
+        maximumTrackTintColor="#c7c7c7"
+        minimumTrackTintColor="#ff0067"
+        ballIndicatorColor={'gray'}
+        ballIndicatorTextColor={'white'}
+      />
     </View>
   );
 }
